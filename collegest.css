@@ -1,0 +1,232 @@
+
+/* Universal Selector */
+* {
+    box-sizing: border-box;
+}
+
+/* Body Background */
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Georgia, serif;
+
+    background-color: orange;
+    background-image: url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1600");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Main Poster */
+.poster {
+    width: 90%;
+    max-width: 1250px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 25px;
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 155px;
+    margin: 0 auto 30px;
+    padding: 15px;
+
+    background-color: #ff9800;
+    border: 3px dotted white;
+    border-radius: 25px;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 50px;
+    margin: 10px;
+}
+
+header p {
+    color: black;
+    font-size: 25px;
+    font-style: italic;
+}
+
+/* Main Content */
+.container {
+    display: flex;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+/* Event Details */
+.details {
+    width: 50%;
+    height: 490px;
+    padding: 25px;
+
+    background-color: white;
+    border: 5px solid #e91e63;
+    border-radius: 25px;
+}
+
+.details h2 {
+    color: white;
+    background-color: #c91812;
+    padding: 12px;
+    margin: 5px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.details p {
+    color: navy;
+    font-size: 21px;
+    margin: 20px 5px;
+}
+
+.date {
+    color: chocolate;
+}
+
+.time {
+    color: chocolate;
+}
+
+.venue {
+    color: chocolate;
+}
+
+/* Message Box */
+.message {
+    margin: 30px 5px;
+    padding: 15px;
+
+    color: darkgreen;
+    background-color: #d9ffd9;
+    border: 2px dashed white;
+    border-radius: 15px;
+
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+}
+
+/* Event Highlights */
+.highlights {
+    width: 50%;
+    height: 490px;
+    padding: 25px;
+
+    background-color: lightpink;
+    border: 5px dashed #b7e600;
+    border-radius: 25px;
+}
+
+.highlights h2 {
+    color: coral;
+    background-color: ivory;
+    padding: 12px;
+    margin: 5px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.highlights ul {
+    color: #65464b;
+    font-size: 20px;
+    line-height: 2;
+    padding-left: 30px;
+}
+
+.trophy {
+    text-align: center;
+    font-size: 90px;
+    margin-top: 15px;
+}
+
+/* Footer */
+footer {
+    margin: 30px 0 0;
+    padding: 10px;
+    background-color: rgba(255, 100, 0, 0.9);
+
+    border: 3px dashed white;
+    border-radius: 25px;
+    text-align: center;
+}
+
+footer h1 {
+    color: white;
+    font-size: 38px;
+}
+
+footer p {
+    color: white;
+    font-size: 22px;
+    font-style: italic;
+}
+
+/* Box Model Demonstration */
+.demo-heading {
+    color: white;
+    text-align: center;
+    background-color: navy;
+    padding: 10px;
+}
+
+.box-demo {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border: 3px solid gray;
+}
+
+.content-box {
+    width: 200px;
+    padding: 20px;
+    border: 10px solid blue;
+    box-sizing: content-box;
+    background-color: lightblue;
+}
+
+.border-box {
+    width: 200px;
+    padding: 20px;
+    border: 10px solid green;
+    box-sizing: border-box;
+    background-color: lightgreen;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 750px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .details,
+    .highlights {
+        width: 100%;
+        height: auto;
+        min-height: 400px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    footer h1 {
+        font-size: 25px;
+    }
+
+    .box-demo {
+        flex-wrap: wrap;
+    }
+}
+
+
